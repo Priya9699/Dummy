@@ -1,0 +1,40 @@
+Summary :
+
+	RxJS Operators :
+		from 
+		of 
+		take 
+		pipe 
+		map
+		filter 
+		pluck 
+		delay 
+		concat 
+		merge 
+		retry 
+		skip 
+
+	Calling Multiple API's with RxJS Operators: 
+		
+calling multiple API :
+    there are three ways to call multiple API's 
+    1. Parellal calls : 
+		API's are independent and run at a same time. 
+			Operators: forkJoin, mergeMap, combineLatest 
+    2. Sequential calls : 
+		API's may dependent and run one after another based on previsous result. 
+			Operators: concatMap, switchMap 
+    3. Combine data from multiple API : 
+		API's call independent and then combine result into one asset 
+			Operators: merge , concat 
+	
+		parellal calls :
+			--- api 1 ==> --- result1
+			--- api 2 ==> --- result2
+			--- api 3 ==> --- result3
+			
+		sequential calls: 
+			---api 1  ---- api 2 --- api 3 ===> --- result1 --- result2 --- result3
+
+		combininng mulitple calls: 
+			---api 1 --- api 2 ---api 3 => -------  result  
